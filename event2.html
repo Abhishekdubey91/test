@@ -1,0 +1,36 @@
+<html>
+    <style>
+        .mydiv{
+            border: 2px solid black;
+            min-width: 400px;
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            background-color: cyan;
+            font-weight: bold;
+            font-size: large;
+        }
+        #v1{
+            margin: 5px;
+            margin-left: 100px;
+        }
+        #v2{
+            margin-left: 40px;
+            margin-bottom: 15px;
+    
+    </style>
+    <body>
+        <div class="mydiv">
+        String : <input type="text" id="v1"/><br>
+        Reverse String : <input type="text" id="v2"/><br>
+        <input type="button" value="Reverse" onclick="reverseStr()"/>
+        </div>
+    </body>
+    <script>
+        function reverseStr(){
+            let Str = v1.value;
+            let word = Str.split(" ").reverse().join(" ");
+            v2.value = word;
+        }
+    </script>
+</html>
